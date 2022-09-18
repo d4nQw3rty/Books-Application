@@ -1,0 +1,10 @@
+h1 {
+  text-align: center;
+  font-size: 50px;
+  color: blueviolet;
+  cursor: pointer;
+}
+
+.change {
+  color: blue;
+}
