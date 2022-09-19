@@ -4,6 +4,7 @@ if (localStorage.getItem('mainArr') !== null) {
 } else {
   newBook = [];
 }
+
 function addInfo() {
   const bookObj = {};
   const title = document.getElementById('book-title').value;
@@ -14,7 +15,22 @@ function addInfo() {
   const newBookArrJ = JSON.stringify(newBook);
   localStorage.setItem('mainArr', newBookArrJ);
 }
-document.getElementById('add-book').addEventListener('click', addInfo);
+
+function formCheck() {
+  const title = document.getElementById('book-title').value;
+  const author = document.getElementById('book-author').value;
+  if (title === '' || author === '') {
+    const message = document.createElement('p');
+    message.innerHTML = 'Please fill all the fields';
+    const form = document.getElementById('book-form');
+    form.appendChild(message);
+    setTimeout(() => { message.remove(); }, 2000);
+  } else {
+    addInfo();
+  }
+}
+
+document.getElementById('add-book').addEventListener('click', formCheck);
 function bookHTML() {
   const bookList = document.getElementById('book-list');
   const dataObj = JSON.parse(localStorage.getItem('mainArr'));
@@ -33,6 +49,14 @@ function bookHTML() {
     button.innerHTML = 'Remove';
     button.classList.add('remove-book');
     div.appendChild(button);
+    button.addEventListener('click', () => {
+      div.remove();
+      newBook.splice(i, 1);
+      const newBookArrJ = JSON.stringify(newBook);
+      localStorage.setItem('mainArr', newBookArrJ);
+      Window.location.reload();
+    });
   }
 }
+
 window.onload = bookHTML();
