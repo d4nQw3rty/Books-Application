@@ -1,10 +1,30 @@
-h1 {
-  text-align: center;
-  font-size: 50px;
-  color: blueviolet;
-  cursor: pointer;
+.bookContainer {
+  padding: 12px;
 }
 
-.change {
-  color: blue;
+#book-list thead tr th {
+  font-size: 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  width: 25%;
+  gap: 10px;
+}
+
+.separator {
+  display: flex;
+  flex-direction: row;
+  height: 1px;
+  background-color: rgba(128, 128, 128, 0.39);
+}
+
+.form button {
+  display: flex;
+  flex-direction: row;
+  width: 60px;
+  text-align: center;
+  justify-content: center;
 }

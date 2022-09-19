@@ -1,4 +1,9 @@
-const h1 = document.querySelector('.h1');
-h1.addEventListener('click', () => {
-  h1.classList.toggle('change');
+document.getElementById('add-book').addEventListener('click', function() {
+  var newBook = [],
+   title = '',
+   author = ''; 
+    title = document.getElementById('book-title').value;
+    author = document.getElementById('book-author').value;
+  console.log(` Book ${title}, author ${author} added`);
+  
 });
