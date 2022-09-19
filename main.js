@@ -54,7 +54,7 @@ function bookHTML() {
       newBook.splice(i, 1);
       const newBookArrJ = JSON.stringify(newBook);
       localStorage.setItem('mainArr', newBookArrJ);
-      Window.location.reload();
+      window.location.reload();
     });
   }
 }
