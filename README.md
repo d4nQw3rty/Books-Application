@@ -1,56 +1,50 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Books application
 
-> Description the project.
+> We built a webpage to create and delete books from a list
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML
+- CSS
+- JavaScript
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
+Not available
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
+### To get a local copy and running the page follow these simple example steps:
+- Click the Code button in the top right corner
+- Download ZIP
+- Unzip the file: Books-Application.zip
+- Open index.html with your web browser
+### Tests
+- `Webhint`
+- `Stylelint`
+- `ESlint`
+- `Lighthouse`
 ### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
-
+```
+$git clone git@github.com:d4nQw3rty/Books-Application.git
+```
 ## Authors
 
-👤 **Author1**
+👤 **Danys Linares**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@githubhandle](https://github.com/d4nQw3rty)
+- Twitter: [@twitterhandle](https://twitter.com/Danys_Linares)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/danys-linares-6a328b238?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BnkyI5IMjTzSg4PVJIZh%2BMw%3D%3D)
 
-👤 **Author2**
+👤 **David Tamayo**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@IngDavidTM](https://github.com/IngDavidTM)
+- Twitter: [@David5TM](https://twitter.com/David5TM)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ing-david-tamayo)
 
 ## 🤝 Contributing
 
@@ -64,12 +58,11 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+## Acknowledgments
+
+- Thanks to Microcerse for the opportunity to learn and grow.
 
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
 
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
