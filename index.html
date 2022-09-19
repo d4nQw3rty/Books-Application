@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Book List Application</title>
+</head>
+<body>
+    <table id="book-list">
+        <thead>
+            <tr>
+                <th>Awsome Books</th>                
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>    
+    <div class="separator"></div>       
+    <form class="form" id="book-form">
+        <input type="text" name="title" id="book-title" placeholder="Title" required maxlength="30">
+        <input type="text" name="author" id="book-author" maxlength="30" placeholder="Author" required>
+        <button type="submit" id="add-book">Add</button>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
