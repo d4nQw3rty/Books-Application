@@ -61,3 +61,7 @@ form button {
   border: 1px solid #000;
   box-shadow: 2px 2px #000;
 }
+
+.gray {
+  background-color: rgba(201, 188, 188, 0.61);
+}

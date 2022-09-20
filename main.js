@@ -34,7 +34,14 @@ function bookHTML() {
   }
   newBook.forEach((obj) => {
     const div = document.createElement('tr');
-    div.classList = 'bookDiv';
+    div.classList = newBook.indexOf(obj);
+    if (div.classList % 2 === 0) {
+      div.classList.add('gray');
+      div.classList.add('bookDiv');
+    } else {
+      div.classList.add('white');
+      div.classList.add('bookDiv');
+    }
     bookList.appendChild(div);
     const p = document.createElement('td');
     p.innerHTML = ['"', obj.title, '"', 'by', obj.author].join(' ');
