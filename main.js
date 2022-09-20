@@ -33,14 +33,12 @@ function bookHTML() {
     newBook = JSON.parse(localStorage.getItem('mainArr'));
   }
   newBook.forEach((obj) => {
-    const div = document.createElement('div');
+    const div = document.createElement('tr');
+    div.classList = 'bookDiv';
     bookList.appendChild(div);
-    const p = document.createElement('p');
-    p.innerHTML = obj.title;
+    const p = document.createElement('td');
+    p.innerHTML = ['"', obj.title, '"', 'by', obj.author].join(' ');
     div.appendChild(p);
-    const p1 = document.createElement('p');
-    p1.innerHTML = obj.author;
-    div.appendChild(p1);
     const button = document.createElement('button');
     button.innerHTML = 'Remove';
     button.classList.add('remove-book');
