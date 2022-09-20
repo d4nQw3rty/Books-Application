@@ -25,8 +25,6 @@ class Book {
     window.location.reload();
   }
 }
-  
-
 
 const booksObject = new Book();
 const bookList = document.getElementById('book-list');
@@ -47,23 +45,18 @@ function bookHTML() {
     button.innerHTML = 'Remove';
     button.classList.add('remove-book');
     button.setAttribute('id', obj.title);
-    div.appendChild(button);   
+    div.appendChild(button);
     const removeBtn = document.querySelectorAll('.remove-book');
     removeBtn.forEach((btn) => {
-             
-        btn.addEventListener('click', () => {
-          if (btn.id === obj.title) {
-            booksObject.removeBook(newBook.indexOf(obj));
-            btn.parentElement.remove();
-           }
-          
-        });
-      
+      btn.addEventListener('click', () => {
+        if (btn.id === obj.title) {
+          booksObject.removeBook(newBook.indexOf(obj));
+          btn.parentElement.remove();
+        }
+      });
     });
-     
-    console.log(removeBtn)
- 
- });}
+  });
+}
 
 function addBook() {
   booksObject.addInfo(title, author);
@@ -83,21 +76,6 @@ function formCheck() {
   }
 }
 
-
-
-function removeBook() {
-  booksObject.removeBook();
-}
-
-
-
-
-
-
-
-
-
 document.getElementById('add-book').addEventListener('click', formCheck);
-
 
 window.onload = bookHTML();
