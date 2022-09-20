@@ -2,11 +2,18 @@ let newBook = [];
 if (localStorage.getItem('mainArr') !== null) {
   newBook = JSON.parse(localStorage.getItem('mainArr'));
 } else {
-  newBook = [];
+  newBook = new Array('');
+}
+
+class Book {
+  constructor(title, author) {
+    this.title = title;
+    this.author = author;
+  }
 }
 
 function addInfo() {
-  const bookObj = {};
+  const bookObj = new Book();
   const title = document.getElementById('book-title').value;
   const author = document.getElementById('book-author').value;
   bookObj.title = title;
