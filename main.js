@@ -1,8 +1,8 @@
-let newBook = [];
+let newBook = new Array(0);
 if (localStorage.getItem('mainArr') !== null) {
   newBook = JSON.parse(localStorage.getItem('mainArr'));
 } else {
-  newBook = new Array('');
+  newBook = new Array(0);
 }
 
 class Book {
