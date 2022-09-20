@@ -51,7 +51,6 @@ function bookHTML() {
 
 function addBook() {
   booksObject.addInfo(title, author);
-  bookHTML();
 }
 
 function formCheck() {
