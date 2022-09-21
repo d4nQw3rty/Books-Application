@@ -11,9 +11,9 @@
     <nav>
         <h2>Awesome Books</h2>
         <ul>
-            <li>List</li>
-            <li class="borders"><div>Add new</div></li>
-            <li>Contact</li>
+            <li id="show-list">List</li>
+            <li class="borders" id="add-new"><div>Add new</div></li>
+            <li id="show-contact">Contact</li>
         </ul>
     </nav>
     <p id="date"></p>
@@ -27,7 +27,7 @@
     <section id="form">
         <form class="form" id="book-form">
             <h2>Add a new book</h2>
-            <input type="text" name="title" id="book-title" placeholder="Title" required maxlength="30">
+            <input type="text" name="title" id="book-title" onchange="capitalize(this)" placeholder="Title" required maxlength="30">
             <input type="text" name="author" id="book-author" maxlength="30" placeholder="Author" required>
             <button type="submit" id="add-book">Add</button>
         </form>

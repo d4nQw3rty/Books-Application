@@ -10,7 +10,7 @@ h2 {
   font-size: 40px;
 }
 
-p{
+p {
   font-size: 18px;
 }
 
@@ -128,11 +128,19 @@ form input::placeholder {
   background-color: rgba(201, 188, 188, 0.61);
 }
 
+#contact {
+  display: none;
+}
+
 .contact {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#show-list {
+  color: blue;
 }
 
 .contact li {
@@ -141,7 +149,7 @@ form input::placeholder {
 
 #form {
   width: 100%;
-  display: flex;
+  display: none;
   flex-direction: column;
 }
 
@@ -149,6 +157,7 @@ footer {
   display: flex;
   width: 100%;
   border: 2px solid #000;
+  margin-top: 100px;
 }
 
 footer p {

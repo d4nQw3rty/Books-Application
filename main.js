@@ -89,3 +89,43 @@ window.onload = displayDate();
 document.getElementById('add-book').addEventListener('click', formCheck);
 
 window.onload = bookHTML();
+
+const showListButton = document.getElementById('show-list');
+const addNewButton = document.getElementById('add-new');
+const showContactButton = document.getElementById('show-contact');
+
+const sectionList = document.getElementById('list');
+const sectionForm = document.getElementById('form');
+const sectionContact = document.getElementById('contact');
+addNewButton.addEventListener('click', () => {
+  sectionForm.style.display = 'flex';
+  addNewButton.style.color = 'blue';
+  showListButton.style.color = 'black';
+  showContactButton.style.color = 'black';
+  sectionList.style.display = 'none';
+  sectionContact.style.display = 'none';
+});
+
+showListButton.addEventListener('click', () => {
+  sectionList.style.display = 'flex';
+  showListButton.style.color = 'blue';
+  showContactButton.style.color = 'black';
+  addNewButton.style.color = 'black';
+  sectionForm.style.display = 'none';
+  sectionContact.style.display = 'none';
+});
+
+showContactButton.addEventListener('click', () => {
+  sectionContact.style.display = 'flex';
+  showContactButton.style.color = 'blue';
+  sectionList.style.display = 'none';
+  sectionForm.style.display = 'none';
+  showListButton.style.color = 'black';
+  addNewButton.style.color = 'black';
+});
+
+function capitalize(string) {
+  string.value = string.value.charAt(0).toUpperCase() + string.value.slice(1);
+}
+
+window.onload = capitalize();
