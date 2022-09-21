@@ -81,6 +81,11 @@ function formCheck() {
   }
 }
 
+function displayDate() {
+  document.getElementById('date').innerHTML = Date();
+}
+window.onload = displayDate();
+
 document.getElementById('add-book').addEventListener('click', formCheck);
 
 window.onload = bookHTML();
