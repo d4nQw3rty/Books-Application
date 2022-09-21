@@ -1,16 +1,47 @@
-.bookContainer {
-  padding: 12px;
-}
-
 #book-list thead tr th {
   font-size: 30px;
 }
 
-.form {
+* {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.bookDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
+
+form button {
+  align-self: flex-end;
+  background-color: #fff;
+  border: 1px solid #000;
+  box-shadow: 2px 2px #000;
+}
+
+.book-list button {
+  background-color: #fff;
+  border: 2px solid #000;
+  box-shadow: 2px 2px #000;
+}
+
+.book-list {
+  border: 2px solid #000;
+  min-width: 500px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 20px;
-  width: 25%;
   gap: 10px;
 }
 
@@ -21,10 +52,16 @@
   background-color: rgba(128, 128, 128, 0.39);
 }
 
-.form button {
-  display: flex;
-  flex-direction: row;
-  width: 60px;
-  text-align: center;
-  justify-content: center;
+form input {
+  border: 2px solid #000;
+  min-width: 300px;
+  min-height: 20px;
+}
+
+form input::placeholder {
+  color: #000;
+}
+
+.gray {
+  background-color: rgba(201, 188, 188, 0.61);
 }

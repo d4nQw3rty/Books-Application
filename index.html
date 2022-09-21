@@ -8,17 +8,14 @@
     <title>Book List Application</title>
 </head>
 <body>
-    <table id="book-list">
-        <thead>
-            <tr>
-                <th>Awsome Books</th>                
-            </tr>
-        </thead>
+    <h2>All awesome Books</h2>
+    <table id="book-list" class="book-list">
         <tbody>
         </tbody>
     </table>    
     <div class="separator"></div>       
     <form class="form" id="book-form">
+        <h2>Add a new book</h2>
         <input type="text" name="title" id="book-title" placeholder="Title" required maxlength="30">
         <input type="text" name="author" id="book-author" maxlength="30" placeholder="Author" required>
         <button type="submit" id="add-book">Add</button>
